@@ -37,7 +37,7 @@ Pukaar is a localized child-safety support platform for **Track 2 (Bal Suraksha)
   - NGO verification admins can manage NGO onboarding only.
   - Case responders can access only assigned cases.
   - Audit admins can view logs, not raw case content.
-- Sensitive report content should be encrypted and compartmentalized to prevent universal plaintext access.
+- Sensitive report content should use per-tenant or per-case key separation, narrowly scoped decryption roles, and audited access paths in addition to encryption at rest, to prevent universal plaintext access.
 
 ### B) Prevent Unaccepted Ticket Blackholes
 - Add an **automated escalation matrix**:
