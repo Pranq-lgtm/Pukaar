@@ -16,6 +16,9 @@ Pukaar is a localized child-safety support platform for **Track 2 (Bal Suraksha)
 
 ### 2) Verification Pipeline (Point 02)
 - Only **verified NGOs** can receive and accept cases.
+- **Authorized helpline recipients** and **authorized police recipients** are separate, non-NGO roles provisioned independently of NGO verification for final escalation.
+- Escalation transfers contain only the minimum case payload: case ID, risk level, incident location, timing, and safe callback/status metadata; full report content and identity details require an explicit operational need.
+- Transfers are restricted by RBAC to assigned helpline or police responders, and every access or transfer is recorded in an audit log; audit admins can review the log but not raw case content.
 - A **superadmin verification workflow** onboards and whitelists NGOs before activation.
 
 ### 3) Dispatch + Physical-Digital Link (Point 03)
