@@ -40,7 +40,7 @@ Pukaar is a localized child-safety support platform for **Track 2 (Bal Suraksha)
 - Add an **automated escalation matrix**:
   - If no NGO accepts within 5 minutes, auto-escalate to backup responders.
   - If still unaccepted, escalate to 24/7 helpline / nearest police control workflow.
-- Reporter receives status feedback at each escalation stage.
+- Reporter receives status feedback at each escalation stage during the active submission session only; anonymous reporters are not promised post-session updates.
 
 ### C) Preserve Anonymity While Reducing Spam
 - Apply anti-abuse controls that do not require identity disclosure:
