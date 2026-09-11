@@ -22,9 +22,9 @@ Pukaar is a localized child-safety support platform for **Track 2 (Bal Suraksha)
 - A **superadmin verification workflow** onboards and whitelists NGOs before activation.
 
 ### 3) Dispatch + Physical-Digital Link (Point 03)
-- New alerts are dispatched to nearby verified NGOs.
+- Before acceptance, dispatch only a minimal, compartmentalized summary of new alerts to nearby verified NGOs.
 - NGO identity/details remain hidden from the reporting side until acceptance.
-- Once accepted, the case is routed for on-ground intervention.
+- Release report content only after explicit assignment and authorization.
 
 ### 4) Localized Goa Rollout
 - Initial deployment scope is Goa to ensure realistic operational fit.
