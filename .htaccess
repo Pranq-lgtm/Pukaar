@@ -1,0 +1,54 @@
+RewriteEngine On
+
+# =========================================================
+# ADMIN BLOCK
+# /admin.php -> /Error/noadmin.php
+# /admin    -> /Error/noadmin.php
+# =========================================================
+
+RewriteRule ^admin(?:\.php)?/?$ /Error/noadmin.php [L]
+
+
+# =========================================================
+# HIDE .PHP EXTENSION
+# /about.php -> /about
+# /about -> internally loads /about.php
+# =========================================================
+
+# Redirect .php URLs to extensionless URLs
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L,NE]
+
+# Internally add .php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L]
+
+
+# =========================================================
+# ERROR HANDLING
+# =========================================================
+
+# 404 - Page not found
+ErrorDocument 404 /Error/pagenotfound.php
+
+# All other common errors
+ErrorDocument 400 /Error/newerror.php
+ErrorDocument 401 /Error/newerror.php
+ErrorDocument 403 /Error/newerror.php
+ErrorDocument 405 /Error/newerror.php
+ErrorDocument 408 /Error/newerror.php
+ErrorDocument 410 /Error/newerror.php
+ErrorDocument 413 /Error/newerror.php
+ErrorDocument 414 /Error/newerror.php
+ErrorDocument 415 /Error/newerror.php
+ErrorDocument 422 /Error/newerror.php
+ErrorDocument 429 /Error/newerror.php
+
+# Server errors
+ErrorDocument 500 /Error/newerror.php
+ErrorDocument 501 /Error/newerror.php
+ErrorDocument 502 /Error/newerror.php
+ErrorDocument 503 /Error/newerror.php
+ErrorDocument 504 /Error/newerror.php

@@ -1,0 +1,6 @@
+.env
+config/db.php
+Controller/config.php
+Developer/Index.php
+Public/Assets/uploads/
+Assets/uploads/
