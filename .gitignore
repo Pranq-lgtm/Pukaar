@@ -1,6 +1,5 @@
 .env
-config/db.php
-Controller/config.php
+Controller/google.php
 Developer/Index.php
 Public/Assets/uploads/
 Assets/uploads/
